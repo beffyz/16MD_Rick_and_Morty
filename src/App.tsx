@@ -16,9 +16,26 @@ const App = () => (
         <div className="row">
           <div className="col-md-12">
             <div className="header__nav">
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/characters">Characters</NavLink>
-              <NavLink to="/about">About</NavLink>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? 'header__link--active' : 'header__link')}
+              >
+                Home
+              </NavLink>
+
+              <NavLink
+                to="/characters"
+                className={({ isActive }) => (isActive ? 'header__link--active' : 'header__link')}
+              >
+                Characters
+              </NavLink>
+
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? 'header__link--active' : 'header__link')}
+              >
+                About
+              </NavLink>
             </div>
           </div>
         </div>

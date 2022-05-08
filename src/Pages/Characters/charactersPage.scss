@@ -1,0 +1,42 @@
+.characters-page__heading {
+  margin-left: 27%;
+  margin-bottom: 10px;
+}
+
+.characters-page__search {
+  border: 1px solid black;
+  border-radius: 100px;
+  margin-bottom: 15px;
+  max-width: 500px;
+  width: 100%;
+  margin-left: 29%;
+}
+
+.characters-page__search--input {
+  max-width: 375px;
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.characters-page__search--box {
+  margin: 10px;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.character__card {
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: bisque;
+}
+
+.character__info {
+  margin: 35px;
+}

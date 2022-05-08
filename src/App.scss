@@ -1,4 +1,25 @@
+.header {
+  background-image: url("./assets/images/background.jpg");
+  width: 100%;
+  background-repeat: initial;
+  margin-bottom: 40px;
+}
+
 .header__nav {
   display: flex;
   gap: 20px;
+  padding-top: 450px;
+  padding-left: 60%;
+}
+
+.header__link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.header__link--active {
+  color: gold;
+  font-weight: 900;
 }
