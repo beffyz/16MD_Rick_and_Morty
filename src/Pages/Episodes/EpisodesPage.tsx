@@ -12,6 +12,10 @@ const EpisodesPage = () => {
     setVisibleEpisodes(episodes);
   }, []);
 
+  useEffect(() => {
+    document.title = 'Rick&Morty | Episodes';
+  }, []);
+
   return (
     <div className="container">
       <h1 className="center-md">Rick and Morty Episodes</h1>

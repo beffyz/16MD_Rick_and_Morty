@@ -1,9 +1,14 @@
 import { useNavigate } from 'react-router-dom';
 import './aboutPage.scss';
+import { useEffect } from 'react';
 import picture from '../../assets/images/about.png';
 
 const AboutPage = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    document.title = 'Rick&Morty | About';
+  }, []);
+
   return (
     <div className="container">
       <div className="row">

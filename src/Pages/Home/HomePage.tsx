@@ -1,8 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import './homePage.scss';
+import { useEffect } from 'react';
 
 const HomePage = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    document.title = 'Rick&Morty | Home';
+  }, []);
 
   return (
     <div className="container">

@@ -13,6 +13,10 @@ const CharactersPage = () => {
     setVisibleCharacters(characters);
   }, []);
 
+  useEffect(() => {
+    document.title = 'Rick&Morty | Characters';
+  }, []);
+
   return (
     <div className="container">
       <h1 className="characters-page__heading">Get to know Rick&Morty Characters</h1>
