@@ -1,0 +1,20 @@
+.episode__card {
+  max-width: 750px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  border: 1px solid black;
+}
+
+.episode__preview {
+  display: flex;
+}
+
+.episode__preview-img {
+  width: 200px;
+  height: 99px;
+}
+
+.episode__preview--details {
+  margin: 10px;
+}

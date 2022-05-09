@@ -8,6 +8,9 @@ import {
 import HomePage from './Pages/Home/HomePage';
 import CharactersPage from './Pages/Characters/CharactersPage';
 import AboutPage from './Pages/About/AboutPage';
+import CharacterDetails from './Pages/CharacterDetails/CharacterDetails';
+import Error404 from './Pages/Error404/Error404';
+import EpisodesPage from './Pages/Episodes/EpisodesPage';
 
 const App = () => (
   <div className="App">
@@ -31,6 +34,13 @@ const App = () => (
               </NavLink>
 
               <NavLink
+                to="/episodes"
+                className={({ isActive }) => (isActive ? 'header__link--active' : 'header__link')}
+              >
+                Episodes
+              </NavLink>
+
+              <NavLink
                 to="/about"
                 className={({ isActive }) => (isActive ? 'header__link--active' : 'header__link')}
               >
@@ -44,7 +54,10 @@ const App = () => (
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/characters" element={<CharactersPage />} />
+        <Route path="/episodes" element={<EpisodesPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/characters/:id" element={<CharacterDetails />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
   </div>

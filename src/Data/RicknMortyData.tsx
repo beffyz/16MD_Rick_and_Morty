@@ -652,7 +652,7 @@ const characters: Character[] = [
       name: 'unknown',
       url: '',
     },
-    image: 'https://rickandmortyapi.com/api/character/avatar/19.jpeg',
+    image: 'https://www.batterfly.com/shop/image/cache/catalog/pic%20tekbox/tbma2/TBMA2_4-228x228.jpg',
     episode: [
       'https://rickandmortyapi.com/api/episode/10',
     ],

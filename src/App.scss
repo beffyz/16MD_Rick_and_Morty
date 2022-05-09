@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 .header {
   background-image: url("./assets/images/background.jpg");
   width: 100%;
@@ -22,4 +24,8 @@
 .header__link--active {
   color: gold;
   font-weight: 900;
+}
+
+.App {
+  font-family: 'Josefin Sans', sans-serif;
 }

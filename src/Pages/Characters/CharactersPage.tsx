@@ -4,6 +4,7 @@ import { getCharacters, Character } from '../../Data/RicknMortyData';
 import './charactersPage.scss';
 
 const CharactersPage = () => {
+  const [inputValue, setInputValue] = useState('');
   const [visibleCharacters, setVisibleCharacters] = useState<Character[]>();
   const navigate = useNavigate();
 
@@ -18,11 +19,19 @@ const CharactersPage = () => {
       <div className="characters-page__search">
         <div className="characters-page__search--box">
           <input
+            onChange={(e) => setInputValue(e.target.value)}
             className="characters-page__search--input"
             type="text"
             placeholder="Search character..."
           />
-          <button>Search</button>
+          <button
+            className="characters-page__search--btn"
+            onClick={() => setVisibleCharacters(getCharacters().filter(
+              (character) => (character.name.toLowerCase().includes(inputValue.toLowerCase()) && character),
+            ))}
+          >
+            Search
+          </button>
         </div>
       </div>
       <div className="characters">
@@ -34,22 +43,14 @@ const CharactersPage = () => {
               <div className="character-card__avatar">
                 <img src={image} alt="avatar" />
               </div>
-              <div>
-                <p>
-                  Name:
-                  {' '}
-                  {name}
-                </p>
-                <p>
-                  Species:
-                  {' '}
-                  {species}
-                </p>
-                <p>
-                  Gender:
-                  {' '}
-                  {gender}
-                </p>
+              <div className="character__details">
+                <p>{name}</p>
+                <button
+                  className="character__details--btn"
+                  onClick={() => navigate(`/characters/${id}`)}
+                >
+                  Character Details
+                </button>
               </div>
             </div>
           </div>

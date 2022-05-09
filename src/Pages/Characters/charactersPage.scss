@@ -1,12 +1,10 @@
 .characters-page__heading {
   margin-left: 27%;
-  margin-bottom: 10px;
 }
 
 .characters-page__search {
-  border: 1px solid black;
-  border-radius: 100px;
-  margin-bottom: 15px;
+  border: none;
+  margin-bottom: 30px;
   max-width: 500px;
   width: 100%;
   margin-left: 29%;
@@ -16,11 +14,23 @@
   max-width: 375px;
   width: 100%;
   margin-right: 10px;
-  margin-left: 15px;
+  margin-left: 10px;
+  padding-left: 0.5em;
+  border: none;
 }
 
 .characters-page__search--box {
-  margin: 10px;
+  margin: 15px;
+}
+
+.characters-page__search--btn {
+  border: none;
+  background: transparent;
+
+  &:hover {
+    cursor: pointer;
+    color: gray;
+  }
 }
 
 .characters {
@@ -34,9 +44,25 @@
   width: 100%;
   border: 1px solid black;
   border-radius: 5%;
-  background-color: bisque;
+  background-color: darkorange;
 }
 
 .character__info {
   margin: 35px;
+}
+
+.character__details {
+  margin-top: 10px;
+}
+
+.character__details--btn {
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+  }
 }
